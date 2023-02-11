@@ -1,0 +1,8 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:PrePostOperatingRoom;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Pre/Post Operating Room",
+    "extends": "dtmi:io:github:smartoperatingblock:Room;1",
+    "contents": []
+}
