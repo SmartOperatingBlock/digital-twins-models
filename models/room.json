@@ -1,0 +1,48 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:Room;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Room",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "zone_id",
+            "schema": "string"
+        },
+        {
+            "@type": ["Property", "Temperature"],
+            "name": "temperature",
+            "unit": "degreeCelsius",
+            "schema": "double"
+        },
+        {
+            "@type": ["Property", "RelativeHumidity"],
+            "name": "humidity",
+            "unit": "percent",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "presence_inside",
+            "schema": "boolean"
+        },
+        {
+            "@type": ["Property", "Illuminance"],
+            "name": "luminosity",
+            "unit": "lux",
+            "schema": "double"            
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:Room:rel_has_actuator;1",
+            "name": "rel_has_actuator",
+            "displayName": "Room has actuator inside",
+            "target": "dtmi:io:github:smartoperatingblock:Actuator;1"
+        }
+    ]
+}
