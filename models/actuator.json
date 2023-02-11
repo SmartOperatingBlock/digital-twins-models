@@ -1,0 +1,68 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:Actuator;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Actuator",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "power_state",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "on",
+                        "displayName": "On",
+                        "enumValue": "on"
+                    },
+                    {
+                        "name": "off",
+                        "displayName": "Off",
+                        "enumValue": "off"
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "intensity_percentage",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "heating",
+                        "displayName": "Heating",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "cooling",
+                        "displayName": "Cooling",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "ventilation",
+                        "displayName": "Ventilation",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "ambient_light",
+                        "displayName": "Ambient Light",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "surgical_light",
+                        "displayName": "Surgical Light",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
