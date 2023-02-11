@@ -1,0 +1,38 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:MedicalTechnology;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Medical Technology",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "endoscope",
+                        "displayName": "Endoscope",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "xray",
+                        "displayName": "X Ray",
+                        "enumValue": 1
+                    }
+                ]
+            } 
+        },
+        {
+            "@type": "Property",
+            "name": "is_in_use",
+            "schema": "boolean"
+        }
+    ]
+}
