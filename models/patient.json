@@ -1,0 +1,118 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:Patient;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Patient",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "heart_beat",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "value",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "unit",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "string",
+                            "enumValues": [
+                                {
+                                    "name": "bpm",
+                                    "displayName": "Beats per minute",
+                                    "enumValue": "bpm"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "blood_pressure",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "diastolic_blood_pressure",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "systolic_blood_pressure",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "unit",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "string",
+                            "enumValues": [
+                                {
+                                "name": "mmhg",
+                                "displayName": "Millimeters of mercury",
+                                "enumValue": "mmhg"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "respiratory_rate",
+            "schema": {
+                "@type": "Object",
+                "fields": [
+                    {
+                        "name": "value",
+                        "schema": "integer"
+                    },
+                    {
+                        "name": "unit",
+                        "schema": {
+                            "@type": "Enum",
+                            "valueSchema": "string",
+                            "enumValues": [
+                                {
+                                    "name": "breaths_per_minute",
+                                    "displayName": "Breaths per minute",
+                                    "enumValue": "breaths_per_minute"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "saturation_percentage",
+            "schema": "integer"
+        },
+        {
+            "@type": ["Property", "Temperature"],
+            "name": "body_temperature",
+            "unit": "degreeCelsius",
+            "schema": "integer"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:Patient:rel_is_associated;1",
+            "name": "rel_is_associated",
+            "displayName": "The Patient is associated to",
+            "target": "dtmi:io:github:smartoperatingblock:HealthcareUser;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:Patient:rel_is_inside;1",
+            "name": "rel_is_inside",
+            "displayName": "The Patient is inside",
+            "target": "dtmi:io:github:smartoperatingblock:Room;1"
+        }
+    ]
+}

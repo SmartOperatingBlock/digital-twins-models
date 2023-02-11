@@ -1,0 +1,18 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:HealthcareUser;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Healthcare User",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "surname",
+            "schema": "string"
+        }
+    ] 
+}
