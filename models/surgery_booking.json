@@ -1,0 +1,32 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:SurgeryBooking;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Surgery Booking",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "booking_date_time",
+            "schema": "dateTime"
+        },
+        {
+            "@type": "Property",
+            "name": "surgery_type",
+            "schema": "string"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgeryBooking:rel_responsible_health_professional;1",
+            "name": "rel_responsible_health_professional",
+            "displayName": "The responsible Health Professional for this surgery is",
+            "target": "dtmi:io:github:smartoperatingblock:HealthProfessional;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgeryBooking:rel_healthcare_user;1",
+            "name": "rel_healthcare_user",
+            "displayName": "The Healthcare User interested in the surgery is",
+            "target": "dtmi:io:github:smartoperatingblock:HealthcareUser;1"
+        }
+    ]
+}
