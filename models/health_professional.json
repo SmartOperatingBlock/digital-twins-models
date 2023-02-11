@@ -1,0 +1,50 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:HealthProfessional;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Health Professional",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "name",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "surname",
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "role",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "surgeon",
+                        "displayName": "Surgeon",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "nurse",
+                        "displayName": "Nurse",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "anesthetist",
+                        "displayName": "Anesthetist",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:Room:rel_is_inside;1",
+            "name": "rel_is_inside",
+            "displayName": "The Health Professional is inside",
+            "target": "dtmi:io:github:smartoperatingblock:Room;1"
+        }
+    ]
+}
