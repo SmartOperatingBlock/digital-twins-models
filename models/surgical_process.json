@@ -1,0 +1,111 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:SurgicalProcess;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Surgical Process",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "process_state",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "pre_surgery",
+                        "displayName": "Pre surgery",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "ongoing_surgery",
+                        "displayName": "Ongoing Surgery",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "post_surgery",
+                        "displayName": "Post Surgery",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "interrupted",
+                        "displayName": "Interrupted",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Property",
+            "name": "process_step",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "patient_in_preparation",
+                        "displayName": "Patient in preparation",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "patient_on_operating_table",
+                        "displayName": "Patient on Operating Table",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "anesthesia",
+                        "displayName": "Anesthesia",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "surgery",
+                        "displayName": "Surgery",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "end_of_surgery",
+                        "displayName": "End of Surgery",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "patient_under_observation",
+                        "displayName": "Patient under observation",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "terminated",
+                        "displayName": "Terminated",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgicalProcess:rel_is_inside;1",
+            "name": "rel_is_inside",
+            "displayName": "The Surgical process is inside",
+            "target": "dtmi:io:github:smartoperatingblock:Room;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgicalProcess:rel_associated_to_booking;1",
+            "name": "rel_associated_to_booking",
+            "displayName": "The Surgical process is associated to the booking",
+            "target": "dtmi:io:github:smartoperatingblock:SurgeryBooking;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgicalProcess:rel_involve_patient;1",
+            "name": "rel_involve_patient",
+            "displayName": "The Surgical process involve patient",
+            "target": "dtmi:io:github:smartoperatingblock:Patient;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgicalProcess:rel_use;1",
+            "name": "rel_use",
+            "displayName": "The Surgical process during surgery use",
+            "target": "dtmi:io:github:smartoperatingblock:ImplantableMedicalDevice;1"
+        }
+    ]
+}
