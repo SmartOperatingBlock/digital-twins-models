@@ -41,7 +41,7 @@
         },
         {
             "@type": "Relationship",
-            "@id": "dtmi:io:github:smartoperatingblock:Room:rel_is_inside;1",
+            "@id": "dtmi:io:github:smartoperatingblock:HealthProfessional:rel_is_inside;1",
             "name": "rel_is_inside",
             "displayName": "The Health Professional is inside",
             "target": "dtmi:io:github:smartoperatingblock:Room;1"
