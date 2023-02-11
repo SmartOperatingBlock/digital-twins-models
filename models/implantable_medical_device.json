@@ -1,0 +1,28 @@
+{
+    "@id": "dtmi:io:github:smartoperatingblock:ImplantableMedicalDevice;1",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Implantable Medical Device",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "type",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "integer",
+                "enumValues": [
+                    {
+                        "name": "pace_maker",
+                        "displayName": "Pace Maker",
+                        "enumValue": 0
+                    },
+                    {
+                        "name": "catheter",
+                        "displayName": "Catheter",
+                        "enumValue": 1
+                    }
+                ]
+            } 
+        }
+    ]
+}
