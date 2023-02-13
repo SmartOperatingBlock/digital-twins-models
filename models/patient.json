@@ -7,29 +7,7 @@
         {
             "@type": "Property",
             "name": "heart_beat",
-            "schema": {
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "value",
-                        "schema": "integer"
-                    },
-                    {
-                        "name": "unit",
-                        "schema": {
-                            "@type": "Enum",
-                            "valueSchema": "string",
-                            "enumValues": [
-                                {
-                                    "name": "bpm",
-                                    "displayName": "Beats per minute",
-                                    "enumValue": "bpm"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
+            "schema": "integer"
         },
         {
             "@type": "Property",
@@ -65,29 +43,7 @@
         {
             "@type": "Property",
             "name": "respiratory_rate",
-            "schema": {
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "value",
-                        "schema": "integer"
-                    },
-                    {
-                        "name": "unit",
-                        "schema": {
-                            "@type": "Enum",
-                            "valueSchema": "string",
-                            "enumValues": [
-                                {
-                                    "name": "breaths_per_minute",
-                                    "displayName": "Breaths per minute",
-                                    "enumValue": "breaths_per_minute"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
+            "schema": "integer"
         },
         {
             "@type": "Property",
