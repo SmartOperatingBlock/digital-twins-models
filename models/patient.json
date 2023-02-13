@@ -54,7 +54,7 @@
             "@type": ["Property", "Temperature"],
             "name": "body_temperature",
             "unit": "degreeCelsius",
-            "schema": "integer"
+            "schema": "double"
         },
         {
             "@type": "Relationship",
