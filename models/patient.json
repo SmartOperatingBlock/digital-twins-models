@@ -57,6 +57,11 @@
             "schema": "double"
         },
         {
+            "@type": "Property",
+            "name": "is_on_operating_table",
+            "schema": "boolean"
+        },
+        {
             "@type": "Relationship",
             "@id": "dtmi:io:github:smartoperatingblock:Patient:rel_is_associated;1",
             "name": "rel_is_associated",
