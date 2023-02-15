@@ -11,34 +11,13 @@
         },
         {
             "@type": "Property",
-            "name": "blood_pressure",
-            "schema": {
-                "@type": "Object",
-                "fields": [
-                    {
-                        "name": "diastolic_blood_pressure",
-                        "schema": "integer"
-                    },
-                    {
-                        "name": "systolic_blood_pressure",
-                        "schema": "integer"
-                    },
-                    {
-                        "name": "unit",
-                        "schema": {
-                            "@type": "Enum",
-                            "valueSchema": "string",
-                            "enumValues": [
-                                {
-                                "name": "mmhg",
-                                "displayName": "Millimeters of mercury",
-                                "enumValue": "mmhg"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
+            "name": "diastolic_blood_pressure",
+            "schema": "integer"
+        },
+        {
+            "@type": "Property",
+            "name": "systolic_blood_pressure",
+            "schema": "integer"
         },
         {
             "@type": "Property",
