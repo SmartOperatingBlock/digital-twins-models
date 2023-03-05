@@ -38,6 +38,13 @@
             "@type": "Property",
             "name": "is_in_use",
             "schema": "boolean"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:MedicalTechnology:rel_is_located;1",
+            "name": "rel_is_located",
+            "displayName": "The Medical Technology is located in",
+            "target": "dtmi:io:github:smartoperatingblock:OperatingRoom;1"
         }
     ]
 }

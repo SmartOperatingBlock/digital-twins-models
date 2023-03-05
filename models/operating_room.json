@@ -4,13 +4,5 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Operating Room",
     "extends": "dtmi:io:github:smartoperatingblock:Room;1",
-    "contents": [
-        {
-            "@type": "Relationship",
-            "@id": "dtmi:io:github:smartoperatingblock:OperatingRoom:rel_contains_medical_technology;1",
-            "name": "rel_contains_medical_technology",
-            "displayName": "Operating Room has Medical Technology inside",
-            "target": "dtmi:io:github:smartoperatingblock:MedicalTechnology;1"
-        }
-    ] 
+    "contents": [] 
 }
