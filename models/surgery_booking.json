@@ -27,6 +27,13 @@
             "name": "rel_healthcare_user",
             "displayName": "The Healthcare User interested in the surgery is",
             "target": "dtmi:io:github:smartoperatingblock:HealthcareUser;1"
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:io:github:smartoperatingblock:SurgeryBooking:rel_booking_associated_patient;1",
+            "name": "rel_booking_associated_patient",
+            "displayName": "The Patient associated to the surgery booking is",
+            "target": "dtmi:io:github:smartoperatingblock:Patient;1"
         }
     ]
 }
