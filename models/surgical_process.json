@@ -30,6 +30,11 @@
                         "name": "interrupted",
                         "displayName": "Interrupted",
                         "enumValue": 3
+                    },
+                    {
+                        "name": "terminated",
+                        "displayName": "Terminated",
+                        "enumValue": 4
                     }
                 ]
             }
@@ -70,11 +75,6 @@
                         "name": "patient_under_observation",
                         "displayName": "Patient under observation",
                         "enumValue": 5
-                    },
-                    {
-                        "name": "terminated",
-                        "displayName": "Terminated",
-                        "enumValue": 6
                     }
                 ]
             }
