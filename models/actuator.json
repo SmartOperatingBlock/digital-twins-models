@@ -26,7 +26,7 @@
         },
         {
             "@type": "Property",
-            "name": "intensity_percentage",
+            "name": "intensity",
             "schema": "integer"
         },
         {
